@@ -28,6 +28,9 @@ import MyImg16 from "../assets/16.png";
 import MyImg17 from "../assets/17.png";
 import MyImg18 from "../assets/18.png";
 import MyFooter from "./MyFooter";
+import HarryPotterFilm from "./HarryPotterFilm";
+import AvengersFilm from "./AvengersFilm";
+
 class MyHeader extends Component {
   render() {
     return (
@@ -103,25 +106,34 @@ class MyHeader extends Component {
         </Row>
         <h4>New Releases</h4>
         <Row className="row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-6 mb-4">
-          <Row className="mb-2 text-center px-1">
+          <Col className="mb-2 text-center px-1">
             <Image fluid src={MyImg13} alt="movie picture" />
-          </Row>
-          <Row className="mb-2 text-center px-1">
+          </Col>
+          <Col className="mb-2 text-center px-1">
             <Image fluid src={MyImg14} alt="movie picture" />
-          </Row>
-          <Row className="mb-2 text-center px-1">
+          </Col>
+          <Col className="mb-2 text-center px-1">
             <Image fluid src={MyImg15} alt="movie picture" />
-          </Row>
-          <Row className="mb-2 text-center px-1">
+          </Col>
+          <Col className="mb-2 text-center px-1">
             <Image fluid src={MyImg16} alt="movie picture" />
-          </Row>
-          <Row className="mb-2 text-center px-1">
+          </Col>
+          <Col className="mb-2 text-center px-1">
             <Image fluid src={MyImg17} alt="movie picture" />
-          </Row>
-          <Row className="mb-2 text-center px-1">
+          </Col>
+          <Col className="mb-2 text-center px-1">
             <Image fluid src={MyImg18} alt="movie picture" />
-          </Row>
+          </Col>
         </Row>
+        <h4>Harry Potter</h4>
+        <Row className="row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-6 mb-4">
+          <HarryPotterFilm />
+        </Row>
+        <h4>Avengers</h4>
+        <Row className="row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-6 mb-4">
+          <AvengersFilm />
+        </Row>
+
         <MyFooter />
       </Container>
     );
