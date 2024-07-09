@@ -1,5 +1,12 @@
 import { Component } from "react";
-import { Button, ListGroup, Nav, Navbar } from "react-bootstrap";
+import {
+  Button,
+  Container,
+  Image,
+  ListGroup,
+  Nav,
+  Navbar,
+} from "react-bootstrap";
 import logo from "../assets/logo.png";
 class Mynav extends Component {
   render() {
@@ -9,9 +16,9 @@ class Mynav extends Component {
         data-bs-theme="dark"
         style={{ backgroundColor: "#221f1f !important" }}
       >
-        <div className="container-fluid">
+        <Container fluid>
           <Navbar.Brand className="navbar-brand" href="#">
-            <img src={logo} style={{ width: "100px", height: "55px" }} />
+            <Image src={logo} style={{ width: "100px", height: "55px" }} />
           </Navbar.Brand>
           <Button
             className="navbar-toggler"
@@ -64,7 +71,7 @@ class Mynav extends Component {
               <i className="bi bi-person-circle icons"></i>
             </div>
           </Navbar.Collapse>
-        </div>
+        </Container>
       </Navbar>
     );
   }
